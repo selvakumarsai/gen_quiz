@@ -10,7 +10,9 @@ import PyPDF2
 load_dotenv()
 
 # Access the API key from the environment
-api_key = os.getenv("GOOGLE_GEN_API")
+#api_key = os.getenv("GOOGLE_GEN_API")
+api_key = st.secrets["gemini_apikey"]
+
 llm = ChatGoogleGenerativeAI(model="gemini-1.5-pro", api_key=api_key)
 
 quiz_prompt = ChatPromptTemplate.from_messages(
