@@ -12,7 +12,7 @@ load_dotenv()
 #api_key = os.getenv("GOOGLE_GEN_API")
 api_key = st.secrets["gemini_apikey"]
 
-llm = ChatGoogleGenerativeAI(model="gemini-1.5-pro", api_key=api_key)
+llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash-preview-0417", api_key=api_key)
 
 quiz_prompt = ChatPromptTemplate.from_messages(
     [
