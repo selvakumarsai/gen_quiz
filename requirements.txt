@@ -1,0 +1,8 @@
+os
+streamlit
+dotenv 
+langchain_core.prompts 
+langchain_core.output_parsers 
+langchain_google_genai 
+bs4 
+PyPDF2
